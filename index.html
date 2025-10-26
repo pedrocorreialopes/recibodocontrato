@@ -4,47 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Termo Simplificado de Locação - Glipearte Pegue e Monte</title>
-  <style>
-    :root{--accent:#6c63ff;--muted:#6b7280;--bg:#f7f7fb;--card:#ffffff;--radius:12px}
-    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#fbfcff 0%,#f7f7fb 100%);color:#111}
-    .container{max-width:920px;margin:32px auto;padding:28px}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(17,24,39,0.06);padding:22px}
-    header{display:flex;align-items:center;gap:18px}
-    .logo{width:88px;height:88px;border-radius:14px;overflow:hidden;flex:0 0 88px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fff 0,#f3f4f6 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.6)}
-    .logo img{max-width:100%;height:auto}
-    h1{margin:0;font-size:18px}
-    p.lead{margin:6px 0 0;color:var(--muted);font-size:13px}
-
-    form .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
-    label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
-    input[type=text],input[type=date],input[type=tel],textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:transparent;font-size:14px}
-    textarea{min-height:84px;resize:vertical}
-
-    .section-title{margin-top:18px;font-weight:600;color:#0f172a}
-    .clauses{font-size:13px;color:#0f172a;line-height:1.45;margin-top:8px}
-
-    .row{display:flex;gap:12px;align-items:center}
-    .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
-    button{background:var(--accent);color:white;border:0;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer}
-    button.ghost{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 1px rgba(108,99,255,0.12)}
-    .small{font-size:12px;color:var(--muted)}
-
-    .sig-wrap{display:flex;gap:12px;margin-top:12px}
-    .sig-box{flex:1;background:#f8fafc;border-radius:8px;padding:8px;border:1px dashed #e6e9ef}
-    canvas{width:100%;height:140px;border-radius:6px;background:white}
-    .sig-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:6px}
-
-    @media (max-width:720px){.grid{grid-template-columns:1fr}.logo{display:none}}
-
-    /* print styles */
-    @media print{
-      body{background:white}
-      .container{box-shadow:none;margin:0;padding:0}
-      .actions, .sig-actions, header .logo{display:none}
-      canvas{height:120px}
-    }
-  </style>
-</head>
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
   <div class="container">
     <div class="card">
@@ -111,22 +71,25 @@
         <textarea id="itens_kit" placeholder="Descreva os itens do kit (mesas, cilindros, boleiras, bolo fake, painéis, etc.)"></textarea>
 
         <div class="section-title">Cláusulas Principais</div>
-	<p><strong>Cláusula Primeira – Do Objeto do Contrato:</strong> Este contrato é para alugar um Kit “Pegue e Monte” com o tema escolhido pelo cliente. O locatário deve retirar e devolver o kit nas datas e horários combinados, conforme descrito no resumo do contrato.</p>
+	      <p><strong>Cláusula Primeira – Do Objeto do Contrato:</strong> Este contrato é para alugar um Kit “Pegue e Monte” com o tema escolhido pelo cliente. O locatário deve retirar e devolver o kit nas datas e horários combinados, conforme descrito no resumo do contrato.</p>
         <p><strong>Cláusula Segunda – Do Prazo de Duração:</strong> O aluguel do kit terá um prazo máximo de 1 dia útil.</p>
         <p><strong>Cláusula Terceira – Das Responsabilidades e Penalidades:</strong> O locador deve entregar o kit em perfeitas condições, e o locatário deve devolvê-lo no mesmo estado. Ambos devem conferir cada item na entrega e na devolução. Se houver danos na devolução, o locatário pagará multa para cobrir reparos.É responsabilidade do locatário verificar as medidas do local antes da montagem. Caso os itens não caibam ou não possam ser utilizados, o valor da locação não será reduzido. Em decorações montadas em áreas abertas, o locatário deve garantir cobertura em caso de chuva e disponibilizar energia elétrica se necessário.</p>
         <ol style='margin-left:20px;'>
           <li>Parágrafo Primeiro: Se o locatário atrasar a devolução, será cobrada multa de 10% do valor total do aluguel, mais 1% por dia de atraso.</li>
-          <li>Parágrafo Quinto: Se o contrato for cancelado fora do prazo de 7 dias previsto no Código de Defesa do Consumidor, será cobrada multa de 30% do valor total do aluguel.</li>
-          <li>Parágrafo Sexto: Se o cliente já tiver pago mais de 30% ou o valor total e quiser cancelar, o valor será devolvido da mesma forma que foi pago, descontando taxas de cartão, se aplicável.</li>
+	        <li>Parágrafo Segundo: Se o locatário não pagar as multas, o locador poderá tomar as medidas legais cabíveis para cobrar o valor devido.</li>
+	        <li>Parágrafo Terceiro: O locatário é responsável pelo kit desde o momento em que o recebe, incluindo casos de perda, roubo ou uso inadequado. Não é permitido <strong>transferir, ceder, emprestar ou sublocar</strong> o kit a terceiros.</li>
+          <li>Parágrafo Quarto: Se o locatário atrasar a devolução, será cobrada multa de 10% do valor total do aluguel, mais 1% por dia de atraso.</li>
+          <li>Parágrafo Quinto: Se o locatário não devolver o kit e não comunicar o locador, este poderá registrar um boletim de ocorrência por furto, e o locatário poderá responder criminalmente.</li>
+          <li>Parágrafo Sexto: Se o cliente já tiver pago mais de 30% ou o valor total e quiser cancelar, não será devolvido o valor pago, mas será disponibilizado um voucher equivalente ao valor pago que poderá ser utilizado no prazo de 6 meses a contar da data do evento original.</li>
           <li>Parágrafo Sétimo: Trocas de data ou tema só serão feitas se houver disponibilidade na agenda. O valor pago como sinal não será transferido para outro contrato.</li>
-          <li>Parágrafo Oitavo: O cliente pode adiar a data da festa, desde que avise com pelo menos 15 dias úteis de antecedência e escolha nova data dentro de 2 meses. Caso contrário, será considerado cancelamento e a multa de 30% será aplicada. Em caso de cancelamento por parte do locatário, não haverá devolução do valor pago. O cliente receberá um voucher, descontando-se a multa de 30% do valor, válido por 6 meses a partir da data do evento original. Em caso de desistência de alguma peça ou substituição no momento da retirada, o locatário deverá arcar com o valor de reposição referente à peça escolhida, se houver perda, dano ou quebra.</li>
-	  <li>Parágrafo Nono: O locatário deve devolver o kit pessoalmente e acompanhar a conferência dos itens, e ambos devem observar se não há nenhum dano ou avaria. Na devolução, serão considerados danos: quebra, roubo, furto, parte faltante, queima, rasgo, mancha, peças de madeira molhadas, perda, lasca etc. Qualquer peça danificada será cobrada conforme a tabela de reposição anexa.</li>
-	  <li>Parágrafo Décimo: A devolução por outra pessoa só será aceita com autorização prévia do locador. Essa pessoa deve ser maior de idade, apresentar documento original e uma procuração escrita.
+          <li>Parágrafo Oitavo: O cliente pode adiar a data da festa, desde que avise com pelo menos 15 dias úteis de antecedência e escolha uma nova data dentro de 6 meses. Caso contrário, será considerado cancelamento e a multa de 30% será aplicada. Em caso de desistência de alguma peça ou substituição no momento da retirada, o locatário deverá arcar com o valor de reposição referente à peça escolhida, se houver <strong>perda, dano ou quebra</strong>.</li>
+	        <li>Parágrafo Nono: O locatário deve devolver o kit pessoalmente e acompanhar a conferência dos itens, e ambos devem observar se não há nenhum dano ou avaria. Na devolução, serão considerados danos: <strong>quebra, roubo, furto, parte faltante, queima, rasgo, mancha, peças de madeira molhadas, perda, lasca etc </strong>. Qualquer peça danificada será cobrada conforme a tabela de reposição anexa.</li>
+	        <li>Parágrafo Décimo: A devolução por outra pessoa só será aceita com autorização prévia do locador. Essa pessoa deve ser maior de idade, apresentar documento original e uma procuração escrita.
         </ol>
 
         <p><strong>Cláusula Quarta – Do transporte e Montagem:</strong> O cliente é responsável pelo transporte e montagem da decoração. O carro usado para transporte deve ser coberto, sem passageiros e sem cadeirinha de bebê, para evitar danos ao material. Caso contrário, o locador pode se recusar a liberar o kit.</p>
 
-	<p><strong>Cláusula Quinta – Da Rescisão:</strong> Se qualquer regra do contrato for descumprida, ele será cancelado automaticamente, e a parte que causou o problema terá que pagar as multas e outras penalidades previstas.</p>
+	      <p><strong>Cláusula Quinta – Da Rescisão:</strong> Se qualquer regra do contrato for descumprida, ele será cancelado automaticamente, e a parte que causou o problema terá que pagar as multas e outras penalidades previstas.</p>
 
         <p><strong>Cláusula Sexta – Do Foro:</strong> Qualquer problema relacionado ao contrato será resolvido no Foro da Comarca de Fortaleza, Ceará.</p>
 
@@ -166,125 +129,5 @@
     </div>
   </div>
 
-  <script>
-    // Simple signature pads
-    function setupSig(id){
-      const canvas = document.getElementById(id);
-      const ctx = canvas.getContext('2d');
-      let drawing=false; let lastX=0,lastY=0;
-      function resize(){const ratio=window.devicePixelRatio||1;canvas.width=canvas.clientWidth*ratio;canvas.height=140*ratio;ctx.scale(ratio,ratio);ctx.lineJoin='round';ctx.lineCap='round';ctx.lineWidth=2.6;ctx.strokeStyle='#111'}
-      function start(e){drawing=true;[lastX,lastY]=getXY(e)}
-      function end(){drawing=false}
-      function draw(e){if(!drawing) return; const [x,y]=getXY(e); ctx.beginPath(); ctx.moveTo(lastX,lastY); ctx.lineTo(x,y); ctx.stroke(); [lastX,lastY]=[x,y]}
-      function getXY(e){const rect=canvas.getBoundingClientRect(); if(e.touches){return [e.touches[0].clientX-rect.left, e.touches[0].clientY-rect.top]} return [e.clientX-rect.left, e.clientY-rect.top]}
-      window.addEventListener('resize',resize); resize();
-      canvas.addEventListener('mousedown',start); canvas.addEventListener('touchstart',start);
-      canvas.addEventListener('mouseup',end); canvas.addEventListener('touchend',end);
-      canvas.addEventListener('mousemove',draw); canvas.addEventListener('touchmove',draw);
-    }
-    function clearSig(id){const c=document.getElementById(id); const ctx=c.getContext('2d'); ctx.clearRect(0,0,c.width,c.height)}
-    setupSig('sig1'); setupSig('sig2');
-
-    function gerarPDF(){
-      // Mark signatures into data URLs and open print window
-      const sig1=document.getElementById('sig1'); const sig2=document.getElementById('sig2');
-      // convert canvases to images
-      const s1=sig1.toDataURL(); const s2=sig2.toDataURL();
-
-      // Build printable document
-      const doc = document.createElement('iframe'); doc.style.position='fixed'; doc.style.right='0'; doc.style.bottom='0'; doc.style.width='0'; doc.style.height='0'; doc.style.border='0';
-      document.body.appendChild(doc);
-      const d = doc.contentWindow.document;
-
-      const html = buildPrintableHTML(s1,s2);
-      d.open(); d.write(html); d.close();
-      // Wait a bit then print
-      setTimeout(()=>{doc.contentWindow.focus(); doc.contentWindow.print(); /* optionally remove iframe after printing */},600);
-    }
-
-    function buildPrintableHTML(s1,s2){
-      const locadoraNome = document.getElementById('locadora_nome').value;
-      const locadoraRep = document.getElementById('locadora_representante').value;
-      const locadoraCont = document.getElementById('locadora_contato').value;
-      const locatarioNome = document.getElementById('locatario_nome').value;
-      const cpf = document.getElementById('locatario_cpf').value;
-      const tel = document.getElementById('locatario_tel').value;
-      const endereco = document.getElementById('locatario_endereco').value;
-      const dataEv = document.getElementById('data_evento').value;
-      const valor = document.getElementById('valor_locacao').value;
-      const itens = document.getElementById('itens_kit').value.replace(/\n/g,'<br>');
-
-      const today = new Date(); const dt = today.toLocaleDateString();
-
-      return `<!doctype html><html><head><meta charset="utf-8"><title>Termo - Impressão</title><style>body{font-family:Arial,Helvetica,sans-serif;color:#111;margin:24px}h2{margin:0 0 6px}p.small{color:#555;font-size:13px}table{width:100%;border-collapse:collapse;margin-top:12px}td,th{padding:8px;border:1px solid #e6e6e6;text-align:left;font-size:13px}fieldset{border:1px solid #e6e6e6;padding:10px;border-radius:8px;margin-top:12px}img.sign{max-width:320px;max-height:120px;border:1px solid #ddd}</style></head><body>
-        <h2>Termo Simplificado de Locação de Kit de Festa</h2>
-        <p class="small">Glipearte Pegue e Monte — Representante: ${locadoraRep}</p>
-        <table><tr><th>Locadora</th><th>Locatário</th></tr>
-        <tr><td>${locadoraNome}<br>${locadoraCont}</td>
-            <td>${locatarioNome}<br>CPF: ${cpf}<br>Tel: ${tel}<br>Endereço evento: ${endereco}</td></tr></table>
-
-        <fieldset><legend>Dados do Evento</legend>
-          <p>Data do evento: ${dataEv} &nbsp;&nbsp; Valor da locação: R$ ${valor}</p>
-          <p><strong>Itens do kit:</strong><br>${itens}</p>
-        </fieldset>
-
-        <fieldset><legend>Cláusulas</legend>
-          <ol>
-            <p><strong>Cláusula Primeira – Do Objeto do Contrato:</strong> Este contrato é para alugar um Kit “Pegue e Monte” com o tema escolhido pelo cliente. O locatário deve retirar e devolver o kit nas datas e horários combinados, conforme descrito no resumo do contrato.</p>
-        <p><strong>Cláusula Segunda – Do Prazo de Duração:</strong> O aluguel do kit terá um prazo máximo de 1 dia útil.</p>
-        <p><strong>Cláusula Terceira – Das Responsabilidades e Penalidades:</strong> O locador deve entregar o kit em perfeitas condições, e o locatário deve devolvê-lo no mesmo estado. Ambos devem conferir cada item na entrega e na devolução. Se houver danos na devolução, o locatário pagará multa para cobrir reparos.É responsabilidade do locatário verificar as medidas do local antes da montagem. Caso os itens não caibam ou não possam ser utilizados, o valor da locação não será reduzido. Em decorações montadas em áreas abertas, o locatário deve garantir cobertura em caso de chuva e disponibilizar energia elétrica se necessário.</p>
-        <ol style='margin-left:20px;'>
-          <li>Parágrafo Primeiro: Se o locatário atrasar a devolução, será cobrada multa de 10% do valor total do aluguel, mais 1% por dia de atraso.</li>
-          <li>Parágrafo Quinto: Se o contrato for cancelado fora do prazo de 7 dias previsto no Código de Defesa do Consumidor, será cobrada multa de 30% do valor total do aluguel.</li>
-          <li>Parágrafo Sexto: Se o cliente já tiver pago mais de 30% ou o valor total e quiser cancelar, o valor será devolvido da mesma forma que foi pago, descontando taxas de cartão, se aplicável.</li>
-          <li>Parágrafo Sétimo: Trocas de data ou tema só serão feitas se houver disponibilidade na agenda. O valor pago como sinal não será transferido para outro contrato.</li>
-          <li>Parágrafo Oitavo: O cliente pode adiar a data da festa, desde que avise com pelo menos 15 dias úteis de antecedência e escolha nova data dentro de 2 meses. Caso contrário, será considerado cancelamento e a multa de 30% será aplicada. Em caso de cancelamento por parte do locatário, não haverá devolução do valor pago. O cliente receberá um voucher, descontando-se a multa de 30% do valor, válido por 6 meses a partir da data do evento original. Em caso de desistência de alguma peça ou substituição no momento da retirada, o locatário deverá arcar com o valor de reposição referente à peça escolhida, se houver perda, dano ou quebra.</li>
-	  <li>Parágrafo Nono: O locatário deve devolver o kit pessoalmente e acompanhar a conferência dos itens, e ambos devem observar se não há nenhum dano ou avaria. Na devolução, serão considerados danos: quebra, roubo, furto, parte faltante, queima, rasgo, mancha, peças de madeira molhadas, perda, lasca etc. Qualquer peça danificada será cobrada conforme a tabela de reposição anexa.</li>
-	  <li>Parágrafo Décimo: A devolução por outra pessoa só será aceita com autorização prévia do locador. Essa pessoa deve ser maior de idade, apresentar documento original e uma procuração escrita.
-        </ol>
-
-        <p><strong>Cláusula Quarta – Do transporte e Montagem:</strong> O cliente é responsável pelo transporte e montagem da decoração. O carro usado para transporte deve ser coberto, sem passageiros e sem cadeirinha de bebê, para evitar danos ao material. Caso contrário, o locador pode se recusar a liberar o kit.</p>
-
-	<p><strong>Cláusula Quinta – Da Rescisão:</strong> Se qualquer regra do contrato for descumprida, ele será cancelado automaticamente, e a parte que causou o problema terá que pagar as multas e outras penalidades previstas.</p>
-
-        <p><strong>Cláusula Sexta – Do Foro:</strong> Qualquer problema relacionado ao contrato será resolvido no Foro da Comarca de Fortaleza, Ceará.</p>
-          </ol>
-        </fieldset>
-
-        <div style="display:flex;gap:30px;margin-top:18px">
-          <div>
-            <p class="small">Assinatura do Locatário</p>
-            <img class="sign" src="${s1}" alt="assinatura locatario" />
-          </div>
-          <div>
-            <p class="small">Assinatura da Glipearte (Locadora)</p>
-            <img class="sign" src="${s2}" alt="assinatura locadora" />
-          </div>
-        </div>
-
-        <p style="margin-top:18px;color:#666;font-size:12px">Fortaleza, Ceará: ${dt}</p>
-        </body></html>`;
-    }
-
-    function baixarJSON(){
-      const data = {
-        locadora_nome: document.getElementById('locadora_nome').value,
-        locadora_representante: document.getElementById('locadora_representante').value,
-        locadora_contato: document.getElementById('locadora_contato').value,
-        locatario_nome: document.getElementById('locatario_nome').value,
-        locatario_cpf: document.getElementById('locatario_cpf').value,
-        locatario_tel: document.getElementById('locatario_tel').value,
-        locatario_endereco: document.getElementById('locatario_endereco').value,
-        data_evento: document.getElementById('data_evento').value,
-        valor_locacao: document.getElementById('valor_locacao').value,
-        itens_kit: document.getElementById('itens_kit').value,
-        assinatura_locatario: document.getElementById('sig1').toDataURL(),
-        assinatura_locadora: document.getElementById('sig2').toDataURL()
-      };
-      const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href=url; a.download='termo_glipearte_dados.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-    }
-  </script>
-</body>
+  <script src="script.js"></script> </body>
 </html>
