@@ -138,7 +138,7 @@ function buildPrintableHTML(s1,s2){
   return `<!doctype html><html><head><meta charset="utf-8"><title>Termo - Impressão</title><style>body{font-family:Arial,Helvetica,sans-serif;color:#111;margin:24px}h2{margin:0 0 6px}p.small{color:#555;font-size:13px}table{width:100%;border-collapse:collapse;margin-top:12px}td,th{padding:8px;border:1px solid #e6e6e6;text-align:left;font-size:13px}fieldset{border:1px solid #e6e6e6;padding:10px;border-radius:8px;margin-top:12px}img.sign{max-width:320px;max-height:120px;border:1px solid #ddd}</style></head><body>
     <h2>Termo Simplificado de Locação de Kit de Festa</h2>
     <p class="small">Glipearte Pegue e Monte — Representante: ${locadoraRep}</p>
-    <table><tr><th>Locadora</th><th>Locatário</th></tr>
+    <table><tr><th>Locador</th><th>Locatário</th></tr>
     <tr><td>${locadoraNome}<br>${locadoraCont}</td>
         <td>${locatarioNome}<br>CPF: ${cpf}<br>Tel: ${tel}<br>Endereço evento: ${endereco}</td></tr></table>
 
@@ -158,8 +158,8 @@ function buildPrintableHTML(s1,s2){
         <img class="sign" src="${s1}" alt="assinatura locatario" />
       </div>
       <div>
-        <p class="small">Assinatura da Glipearte (Locadora)</p>
-        <img class="sign" src="${s2}" alt="assinatura locadora" />
+        <p class="small">Assinatura da Glipearte (Locador)</p>
+        <img class="sign" src="${s2}" alt="assinatura locador" />
       </div>
     </div>
 
